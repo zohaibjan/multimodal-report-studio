@@ -180,7 +180,7 @@ function DetailModal({ inspection, defects, onClose }) {
         >
           {/* Modal header */}
           <div className="sticky top-0 z-10 flex items-center justify-between px-6 py-4 border-b border-border bg-card">
-            <h2 className="font-semibold text-foreground">Inspection Details</h2>
+            <h2 className="font-semibold text-foreground">Report Details</h2>
             <button
               onClick={onClose}
               className="text-muted-foreground hover:text-foreground transition p-1 rounded-lg hover:bg-secondary/60"
@@ -195,7 +195,7 @@ function DetailModal({ inspection, defects, onClose }) {
               {[
                 { icon: MapPin,       label: 'Site Address',  value: inspection.SITE_ADDRESS },
                 { icon: CalendarDays, label: 'Date',          value: new Date(inspection.INSPECTION_DATE).toLocaleDateString('en-AU', { day: '2-digit', month: '2-digit', year: 'numeric' }) },
-                { icon: User,         label: 'Inspector',     value: inspection.INSPECTOR_NAME },
+                { icon: User,         label: 'Reviewer',     value: inspection.INSPECTOR_NAME },
                 { icon: Building2,    label: 'Contractor',    value: inspection.CONTRACTOR_NAME },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="rounded-lg border border-border bg-secondary/20 px-4 py-3">

@@ -224,7 +224,7 @@ function DefectCard({ defect, index, onChange, onRemove }) {
 export default function ReportPreview({
   initialData,          // JSON returned by /api/generate-report-preview
   stageFilesToCleanup,  // array of stage filenames to clean after download
-  onReset,              // callback to start a new inspection
+  onReset,              // callback to start a new report
 }) {
   const [data, setData] = useState(initialData);
   const [downloading, setDownloading] = useState(false);
@@ -338,7 +338,7 @@ export default function ReportPreview({
         className="glow-card rounded-xl bg-card p-5 sm:p-6 space-y-4"
       >
         <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">
-          Inspection Details
+          Report Details
         </h3>
 
         {data.main_site_image && (

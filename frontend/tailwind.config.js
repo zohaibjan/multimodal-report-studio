@@ -21,13 +21,13 @@ export default {
         border:         'hsl(var(--border))',
         input:          'hsl(var(--input))',
         ring:           'hsl(var(--ring))',
-        // ── ABI brand shortcuts ────────────────────────────────────────
-        'abi-blue':     '#3B82F6',   // bright blue accent
-        'abi-cyan':     '#06B6D4',   // magic-UI glow teal
-        'abi-purple':   '#8B5CF6',   // secondary accent
-        'abi-surface':  '#0F172A',   // main dark surface (slate-900)
-        'abi-surface2': '#1E293B',   // card surface (slate-800)
-        'abi-surface3': '#334155',   // hover / border (slate-700)
+        // ── Studio colour shortcuts ────────────────────────────────────────
+        'studio-blue':     '#3B82F6',   // bright blue accent
+        'studio-cyan':     '#06B6D4',   // magic-UI glow teal
+        'studio-purple':   '#8B5CF6',   // secondary accent
+        'studio-surface':  '#0F172A',   // main dark surface (slate-900)
+        'studio-surface2': '#1E293B',   // card surface (slate-800)
+        'studio-surface3': '#334155',   // hover / border (slate-700)
       },
       borderRadius: {
         lg: 'var(--radius)',

@@ -86,7 +86,7 @@ function BasicInfoSection({
       {/* Step 1 target */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6" data-tour="basic-info-welcome">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Inspector Name *</label>
+          <label className="block text-sm font-medium text-gray-700 mb-2">Reviewer Name *</label>
           <input
             type="text"
             value={inspectorName}
@@ -98,7 +98,7 @@ function BasicInfoSection({
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Contractor Name *</label>
+          <label className="block text-sm font-medium text-gray-700 mb-2">Supplier Name *</label>
           <input
             type="text"
             value={contractorName}
@@ -331,7 +331,7 @@ function BasicInfoSection({
 
         {showOptional && (
           <>
-            {/* General Photos and Builder Conversation side by side */}
+            {/* General Photos and Review Conversation side by side */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* General Photos - Step 6 target */}
               <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 hover:border-REFERENCE-navy transition-colors min-h-[256px] flex flex-col" data-tour="general-photos">
@@ -447,14 +447,14 @@ function BasicInfoSection({
                 </div>
               </div>
 
-              {/* Builder Conversation (Optional) - Step 7 target */}
+              {/* Review Conversation (Optional) - Step 7 target */}
               <div
                 className="border-2 border-dashed border-gray-300 rounded-lg p-6 hover:border-REFERENCE-navy transition-colors h-64 flex flex-col justify-between relative"
                 data-tour="builder-conversation"
               >
-                <label className="block text-sm font-medium text-gray-700 mb-2">Builder Conversation (Optional)</label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Review Conversation (Optional)</label>
                 <p className="text-xs text-gray-500 mb-2">
-                  If you recorded a short discussion with the builder (context / clarifications), upload it here and we'll include a transcript in the report.
+                  If you recorded a short discussion with a participant (context / clarifications), upload it here and we'll include a transcript in the report.
                 </p>
                 <div className="text-center mt-4">
                   <input

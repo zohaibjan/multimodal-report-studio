@@ -18,7 +18,7 @@ function BentoCard({ icon: Icon, title, description, accent = 'blue', delay = 0 
   const accentMap = {
     blue:   'text-[hsl(var(--primary))] bg-[hsl(var(--primary)/0.1)]',
     purple: 'text-[hsl(var(--accent))]  bg-[hsl(var(--accent)/0.1)]',
-    cyan:   'text-abi-cyan              bg-cyan-500/10',
+    cyan:   'text-studio-cyan              bg-cyan-500/10',
   };
 
   return (
@@ -82,9 +82,9 @@ export default function HomePage() {
           transition={{ duration: 0.5, delay: 0.05 }}
           className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6"
         >
-          <span className="shimmer-text">AI Building</span>
+          <span className="shimmer-text">Multimodal</span>
           <br />
-          <span className="text-foreground">Inspector</span>
+          <span className="text-foreground">Report Studio</span>
         </motion.h1>
 
         {/* Sub */}
@@ -94,8 +94,8 @@ export default function HomePage() {
           transition={{ duration: 0.5, delay: 0.12 }}
           className="max-w-xl mx-auto text-lg text-muted-foreground mb-10 leading-relaxed"
         >
-          Record your site walkthrough. AI transcribes, detects defects, and
-          generates a professional inspection report — in seconds.
+          Record your site walkthrough. AI transcribes, suggests observations, and
+          generates a draft report for your review.
         </motion.p>
 
         {/* CTAs */}
@@ -114,7 +114,7 @@ export default function HomePage() {
               className="absolute inset-0 -translate-x-full bg-white/20 skew-x-12 group-hover:translate-x-full transition-transform duration-700"
             />
             <Mic size={16} />
-            Start New Inspection
+            Start New Report
             <ChevronRight size={14} className="opacity-70" />
           </button>
 
@@ -169,14 +169,14 @@ export default function HomePage() {
           <BentoCard
             icon={FileText}
             title="Professional Reports"
-            description="One click generates a complete Word report with photos, defect codes, builder conversation, and compliance status."
+            description="One click generates a complete Word report with photos, defect codes, review conversations, and reviewer notes."
             accent="cyan"
             delay={0.46}
           />
           <BentoCard
             icon={Shield}
-            title="Fully Local & Private"
-            description="Audio, photos and reports stay on your machine. No cloud storage, no third-party access to your inspection data."
+            title="Local Storage, Optional Cloud AI"
+            description="Uploads and reports are stored locally. Transcripts and selected images may be sent to OpenAI; configure service access and retention for your use."
             accent="purple"
             delay={0.54}
           />
@@ -189,8 +189,8 @@ export default function HomePage() {
           />
           <BentoCard
             icon={BarChart3}
-            title="Inspection Dashboard"
-            description="Browse all past inspections, review defects, and re-download reports from a clean searchable dashboard."
+            title="Report Dashboard"
+            description="Browse past reports, review observations, and re-download reports from a clean searchable dashboard."
             accent="cyan"
             delay={0.7}
           />

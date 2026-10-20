@@ -53,7 +53,7 @@ python -m unittest discover -s tests -v
 npm run build
 ```
 
-7 offline tests pass for report generation, template metadata and API/CSRF behavior plus upload-path containment.
+9 offline tests pass for report generation, fallback/analysis export labels, template metadata and API/CSRF behavior plus upload-path containment.
 The Vite production build passes. Real audio inference, photo inference, live service credentials,
 and the full upload-to-report flow have not been validated against a live account in this release.
 This is a local demo: bind the API to loopback. Add proper authentication, isolation, quotas and

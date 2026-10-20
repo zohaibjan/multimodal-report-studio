@@ -1,5 +1,5 @@
 """
-OpenAI Service for ABI Inspection
+OpenAI service for Multimodal Report Studio
 Uses:
   - Local Whisper (openai-whisper) for FREE on-device audio transcription
   - OpenAI GPT for LLM operations (transcript summary, defect extraction)
@@ -313,7 +313,7 @@ class OpenAIService:
 
             defect_codes_ref = "\n".join(defect_codes_list) if defect_codes_list else "Use only the supplied synthetic demonstration categories; otherwise UNKNOWN"
 
-            prompt = f"""You are a professional field reviewer producing an ABI (Multimodal Report Studio) report.
+            prompt = f"""You are a professional field reviewer producing a Multimodal Report Studio report.
 
 CRITICAL: Read the transcript and COUNT how many separate defects are mentioned BEFORE you start mapping them to codes. Each distinct issue must have its own entry.
 

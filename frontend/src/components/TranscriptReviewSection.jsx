@@ -79,7 +79,7 @@ function TranscriptReviewSection({
         {/* Conversation transcript (optional) - Step 10 target */}
         <div className="mt-6">
           <div className="flex items-center justify-between mb-2">
-            <label className="block text-sm font-medium text-gray-700">Builder Conversation (Optional)</label>
+            <label className="block text-sm font-medium text-gray-700">Review Conversation (Optional)</label>
             
             <button
               onClick={async () => {
@@ -117,7 +117,7 @@ function TranscriptReviewSection({
               rows="6"
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-REFERENCE-navy focus:border-transparent font-mono text-sm"
               data-tour="conversation-textarea"
-              placeholder="Paste or type the builder-inspector conversation here (this will be included in the final report)."
+              placeholder="Paste or type the review conversation here (this will be included in the final report)."
             />
           ) : (
             <p className="mt-2 text-gray-700 whitespace-pre-wrap">

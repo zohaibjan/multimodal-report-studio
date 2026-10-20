@@ -25,7 +25,7 @@ function App() {
 
         <footer className="border-t border-border/50 py-4">
           <div className="max-w-7xl mx-auto px-6 text-center text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} ABI · Multimodal Report Studio
+            &copy; {new Date().getFullYear()} Multimodal Report Studio
             &nbsp;&mdash;&nbsp;AI-assisted analysis, verify findings with a qualified professional.
           </div>
         </footer>

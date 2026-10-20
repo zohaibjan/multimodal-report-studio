@@ -399,7 +399,7 @@ export const getDemoSteps = ({ carouselIndex, setCarouselIndex, isIPad = false, 
     target: '[data-tour="basic-info-welcome"]',
     content: (
       <>
-        <h5 className="font-semibold">Welcome to the Building Inspection App</h5>
+        <h5 className="font-semibold">Welcome to the Multimodal Report Studio</h5>
         <p>Start by filling in the basic information. For this demo, the fields have been prefilled.</p>
         <p><br /></p>
         <small>Click "Next" to continue.</small>
@@ -658,7 +658,7 @@ export const getDemoSteps = ({ carouselIndex, setCarouselIndex, isIPad = false, 
     target: '[data-tour="generate-report-button"]',
     content: (
       <>
-        <p>Generate your inspection report once all defects are reviewed.</p>
+        <p>Generate your report report once all defects are reviewed.</p>
         <p><br /></p>
         <small>Click "Generate Report" to continue.</small>
       </>
@@ -676,7 +676,7 @@ export const getDemoSteps = ({ carouselIndex, setCarouselIndex, isIPad = false, 
           target: '[data-tour="download-report-button"]',
           content: (
             <>
-              Up next: we'll show you how to save your downloaded inspection report to OneDrive.
+              Up next: we'll show you how to save your downloaded observation report to OneDrive.
               <p><br /></p>
               To follow along, make sure OneDrive and Microsoft Word are installed on your device and that you're signed in.
               <p><br /></p>

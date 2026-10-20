@@ -10,7 +10,7 @@ function ReportReadySection({
     <div className="text-center py-8 sm:py-12 px-4">
       <CheckCircle className="w-16 h-16 sm:w-20 sm:h-20 mx-auto text-green-600 mb-4 sm:mb-6" />
       <h2 className="text-2xl sm:text-3xl font-bold text-REFERENCE-navy mb-3 sm:mb-4 break-words">Report Generated Successfully!</h2>
-      <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 break-words">Your inspection report is ready to download.</p>
+      <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 break-words">Your report is ready to download.</p>
       <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
         <button
           onClick={handleDownloadReport}
@@ -24,7 +24,7 @@ function ReportReadySection({
           onClick={handleStartNewInspection}
           className="w-full sm:w-auto px-6 sm:px-8 py-3 border border-REFERENCE-navy text-REFERENCE-navy rounded-lg hover:bg-gray-50 transition-colors text-sm sm:text-base whitespace-nowrap"
         >
-          Start New Inspection
+          Start New Report
         </button>
       </div>
     </div>

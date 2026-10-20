@@ -580,10 +580,10 @@ export default function InspectionForm() {
           className="text-center mb-10"
         >
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">
-            <span className="shimmer-text">New Inspection</span>
+            <span className="shimmer-text">New Report</span>
           </h1>
           <p className="text-muted-foreground text-sm">
-            Follow the steps to generate your inspection report.
+            Follow the steps to generate your report report.
           </p>
         </motion.div>
 
@@ -627,7 +627,7 @@ export default function InspectionForm() {
           )}
         </AnimatePresence>
 
-        {/* ── Step 0: Inspector Details ───────────────── */}
+        {/* ── Step 0: Reviewer Details ───────────────── */}
         <AnimatePresence mode="wait">
           {step === 0 && (
             <motion.div
@@ -640,13 +640,13 @@ export default function InspectionForm() {
             >
               <h2 className="text-lg font-semibold text-foreground mb-6 flex items-center gap-2">
                 <User size={18} className="text-[hsl(var(--primary))]" />
-                Inspector Details
+                Reviewer Details
               </h2>
 
               <div className="space-y-5">
                 <div>
                   <FieldLabel icon={User} required>
-                    Inspector Name
+                    Reviewer Name
                   </FieldLabel>
                   <input
                     type="text"
@@ -659,7 +659,7 @@ export default function InspectionForm() {
 
                 <div>
                   <FieldLabel icon={User} required>
-                    Builder / Contractor Name
+                    Builder / Supplier Name
                   </FieldLabel>
                   <input
                     type="text"

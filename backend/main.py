@@ -1,5 +1,5 @@
 """
-FastAPI Backend for Building Inspection Report Generator
+FastAPI Backend for Multimodal Report Studio
 Modern API with audio transcription and report generation
 """
 import os
@@ -132,8 +132,8 @@ def format_inspection_data_simple(inspection_data):
 
 # Initialize FastAPI app
 app = FastAPI(
-    title="Building Inspection API",
-    description="AI-powered building inspection reports with audio transcription",
+    title="Multimodal Report Studio API",
+    description="AI-assisted audio and photo reports with human review",
     version="1.0.0"
 )
 
@@ -295,7 +295,7 @@ class HealthResponse(BaseModel):
 async def root():
     """Root endpoint"""
     return {
-        "message": "Building Inspection API",
+        "message": "Multimodal Report Studio API",
         "version": "1.0.0",
         "docs": "/docs"
     }
@@ -550,7 +550,7 @@ async def submit_manual_transcript(
 @app.post("/api/upload-conversation")
 async def upload_conversation(audio_file: UploadFile = File(...)):
     """
-    Upload builder-inspector conversation audio file to local storage
+    Upload review conversation audio file to local storage
     """
     try:
         service = get_db_service()
@@ -601,7 +601,7 @@ async def transcribe_conversation(
     stage_filename: str = Form(...)
 ):
     """
-    Transcribe builder-inspector conversation audio using OpenAI Whisper API.
+    Transcribe review conversation audio using OpenAI Whisper API.
     Returns only transcript (no AI analysis/summary)
     
     Args:

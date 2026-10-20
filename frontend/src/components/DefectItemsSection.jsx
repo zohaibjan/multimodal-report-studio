@@ -32,7 +32,7 @@ function DefectItemsSection({
       {defects.length === 0 ? (
         <div className="text-center py-12 border-2 border-dashed border-gray-300 rounded-lg">
           <AlertCircle className="w-12 h-12 mx-auto text-gray-400 mb-3" />
-          <p className="text-gray-600">No defects detected. Go back to edit the transcript or start a new inspection.</p>
+          <p className="text-gray-600">No defects detected. Go back to edit the transcript or start a new report.</p>
         </div>
       ) : (
         <div className="space-y-6" data-tour="remaining-defects">
